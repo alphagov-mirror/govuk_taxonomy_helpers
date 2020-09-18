@@ -20,10 +20,6 @@ node {
       govuk.bundleGem()
     }
 
-    stage('Linter') {
-      govuk.runRakeTask("lint")
-    }
-
     stage('Tests') {
       govuk.runTests('spec')
     }
